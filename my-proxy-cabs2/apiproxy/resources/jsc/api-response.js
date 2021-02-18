@@ -1,0 +1,1 @@
+ context.setVariable("custom.response.content",response.content);

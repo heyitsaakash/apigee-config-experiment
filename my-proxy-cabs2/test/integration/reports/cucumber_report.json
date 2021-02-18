@@ -1,0 +1,321 @@
+[
+  {
+    "description": "  Petstore exposes various resources that facilitate and demonstrate APIGEE Integration testing\n  As APIGEE client I want to verify that all API resources are working as they should",
+    "keyword": "Feature",
+    "name": "",
+    "line": 2,
+    "id": "",
+    "tags": [
+      {
+        "name": "@core",
+        "line": 1
+      }
+    ],
+    "uri": "my-apigee-api/test/integration/features/petstore.feature",
+    "elements": [
+      {
+        "id": ";add-new-pet-post-request---success-200-ok",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add New Pet POST request - Success 200 OK",
+        "tags": [
+          {
+            "name": "@core",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "my-apigee-api/test/integration/features/support/init.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I set body to {\"id\":\"5656\",\"name\":\"Bela Bardog\",\"photourls\":[],\"tags\":[],\"status\":\"available\"}",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:52"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Content-Type",
+                      "application/json"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I set headers to",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I POST to /v2/pet",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "response code should be 200",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:167"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "response body path $.id should be 5656",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "response body path $.name should be Bela Bardog",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:200"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "response body path $.status should be available",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": ";pet-by-id-get-request---success-200-ok",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Pet By ID GET request - Success 200 OK",
+        "tags": [
+          {
+            "name": "@core",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:29"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "my-apigee-api/test/integration/features/support/init.js:6"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I set Content-type header to application/json",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I GET /v2/pet/5656",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "response code should be 200",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:167"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": ";pet-by-id-get-request---invalid-404-not-found",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Pet By ID GET request - Invalid 404 Not Found",
+        "tags": [
+          {
+            "name": "@core",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "my-apigee-api/test/integration/features/support/init.js:6"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I set Content-type header to application/json",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:37"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I GET /v2/pet/56561",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "response code should be 404",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:167"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "response body path $.message should be Pet not found",
+            "match": {
+              "location": "node_modules/apickli/apickli-gherkin.js:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

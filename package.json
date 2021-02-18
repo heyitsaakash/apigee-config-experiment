@@ -1,0 +1,36 @@
+{
+    "name": "my-proxy-cabs2",
+    "version": "1.0.0",
+    "directories": {
+        "test": "test"
+    },
+    "keywords": [
+        "istanbul"
+    ],
+"scripts": {
+    "test": "nyc --reporter=lcov mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apickli": "latest",
+    "sinon": "^9.0.2",
+    "apigeelint": "^0.4.3"
+  },
+  "devDependencies": {
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5",
+    "eslint": "^6",
+    "eslint-config-google": "^0",
+    "gulp": "^4",
+    "fs-extra": "^8",
+    "argv": "^0",
+    "gulp-cucumber": "^0",
+    "gulp-eslint": "^6",
+    "gulp4-run-sequence": "^0",
+    "mocha": "^8.0.1"
+  }
+}
+
+
+

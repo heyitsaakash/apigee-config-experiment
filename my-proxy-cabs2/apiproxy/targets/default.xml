@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<TargetEndpoint name="default">
+  <Description>Uber API</Description>
+  <PreFlow name="PreFlow">
+    <Response>
+      <Step>
+        <Name>AM-add-cors</Name>
+      </Step>
+    </Response>
+  </PreFlow>
+  <Flows/>
+  <PostFlow name="PostFlow">
+    <Response>
+      <Step>
+        <Name>JS-api-response</Name>
+      </Step>
+      <Step>
+        <Name>AM-set-api-response</Name>
+      </Step>
+    </Response>
+  </PostFlow>
+  <HTTPTargetConnection>
+    <URL>https://api.uber.com/v1</URL>
+  </HTTPTargetConnection>
+</TargetEndpoint>

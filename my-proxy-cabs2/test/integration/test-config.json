@@ -1,0 +1,6 @@
+{
+	"myApigeeApi" : { 
+		"domain": "orgName-envName.apigee.net",
+		"basepath": "//cabs2019"
+	}
+}

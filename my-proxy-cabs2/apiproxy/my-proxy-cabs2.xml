@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<APIProxy revison="1" name="my-proxy-cabs2">
+  <CreatedAt>1600322922</CreatedAt>
+  <Description>cabs2</Description>
+  <Policies>
+    <Policy>JS-trace-utils</Policy>
+    <Policy>FC-error-handler</Policy>
+    <Policy>JS-api-response</Policy>
+    <Policy>AM-set-api-response</Policy>
+    <Policy>AM-add-cors</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+  <DisplayName>my-proxy-cabs2</DisplayName>
+  <Resources>
+    <Resource>jsc://trace-utils.js</Resource>
+    <Resource>jsc://api-response.js</Resource>
+  </Resources>
+</APIProxy>
