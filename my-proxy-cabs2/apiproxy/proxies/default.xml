@@ -1,59 +1,19 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProxyEndpoint name="default">
-  <Description>Uber API</Description>
-  <DefaultFaultRule name="all">
-    <AlwaysEnforce>true</AlwaysEnforce>
-    <Step>
-      <Name>FC-error-handler</Name>
-    </Step>
-  </DefaultFaultRule>
   <PreFlow name="PreFlow">
-    <Request>
-      <Step>
-        <Name>JS-trace-utils</Name>
-      </Step>
-    </Request>
+    <Request/>
+    <Response/>
   </PreFlow>
-  <Flows>
-    <Flow name="GET /products">
-      <Condition>(proxy.pathsuffix MatchesPath "/products") and (request.verb = "GET")</Condition>
-      <Description>Product Types</Description>
-      <Request/>
-      <Response/>
-    </Flow>
-    <Flow name="GET /estimates/price">
-      <Condition>(proxy.pathsuffix MatchesPath "/estimates/price") and (request.verb = "GET")</Condition>
-      <Description>Price Estimates</Description>
-      <Request/>
-      <Response/>
-    </Flow>
-    <Flow name="GET /estimates/time">
-      <Condition>(proxy.pathsuffix MatchesPath "/estimates/time") and (request.verb = "GET")</Condition>
-      <Description>Time Estimates</Description>
-      <Request/>
-      <Response/>
-    </Flow>
-    <Flow name="GET /me">
-      <Condition>(proxy.pathsuffix MatchesPath "/me") and (request.verb = "GET")</Condition>
-      <Description>User Profile</Description>
-      <Request/>
-      <Response/>
-    </Flow>
-    <Flow name="GET /history">
-      <Condition>(proxy.pathsuffix MatchesPath "/history") and (request.verb = "GET")</Condition>
-      <Description>User Activity</Description>
-      <Request/>
-      <Response/>
-    </Flow>
-  </Flows>
+  <Flows/>
   <PostFlow name="PostFlow">
     <Request/>
     <Response/>
   </PostFlow>
   <HTTPProxyConnection>
+    <!--<BasePath>/swagger-petstore-dec7</BasePath>-->
     <BasePath>/cabs2019</BasePath>
-    <VirtualHost>default</VirtualHost>
     <VirtualHost>secure</VirtualHost>
+    <VirtualHost>default</VirtualHost>
   </HTTPProxyConnection>
   <RouteRule name="default">
     <TargetEndpoint>default</TargetEndpoint>

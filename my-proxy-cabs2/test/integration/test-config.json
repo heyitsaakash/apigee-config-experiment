@@ -1,6 +1,6 @@
 {
 	"myApigeeApi" : { 
-		"domain": "orgName-envName.apigee.net",
-		"basepath": "//cabs2019"
+		"domain": "aakashsharmaa5-eval-test.apigee.net",
+		"basepath": "/cabs2019/pet"
 	}
 }

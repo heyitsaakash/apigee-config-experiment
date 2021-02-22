@@ -2,8 +2,8 @@ reporter = require('cucumber-html-reporter');
  
 var options = {
         theme: 'bootstrap',
-        jsonFile: 'my-proxy-cabs2/target/test/integration/reports/cucumber_report.json',
-        output: 'my-proxy-cabs2/target/test/integration/reports/cucumber_report.html',
+        jsonFile: 'my-proxy-cabs2/test/integration/reports/cucumber_report.json',
+        output: 'my-proxy-cabs2/test/integration/reports/cucumber_report.html',
         reportSuiteAsScenarios: true,
         scenarioTimestamp: true,
         launchReport: true,

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-02-22T01:08:12" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Simple Math Test" timestamp="2021-02-22T01:08:12" tests="2" file="/Users/aakashsharma/Desktop/apigee_hcl/Quilter/backups_advantage_apigee/edge-proxies-branch-cabs/apigee-config-experiment/my-proxy-cabs2/test/unit/sample.js" time="0.0000" failures="0">
+    <testcase name="Simple Math Test should return 2" time="0.0000" classname="should return 2">
+    </testcase>
+    <testcase name="Simple Math Test should return 10" time="0.0000" classname="should return 10">
+    </testcase>
+  </testsuite>
+</testsuites>

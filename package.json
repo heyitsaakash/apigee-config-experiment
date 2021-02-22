@@ -7,30 +7,29 @@
     "keywords": [
         "istanbul"
     ],
-"scripts": {
-    "test": "nyc --reporter=lcov mocha"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "apickli": "latest",
-    "sinon": "^9.0.2",
-    "apigeelint": "^0.4.3"
-  },
-  "devDependencies": {
-    "cucumber": "^5.1.0",
-    "cucumber-html-reporter": "^5",
-    "eslint": "^6",
-    "eslint-config-google": "^0",
-    "gulp": "^4",
-    "fs-extra": "^8",
-    "argv": "^0",
-    "gulp-cucumber": "^0",
-    "gulp-eslint": "^6",
-    "gulp4-run-sequence": "^0",
-    "mocha": "^8.0.1"
-  }
+    "scripts": {
+        "test": "nyc --reporter=cobertura --reporter=html mocha  --reporter mocha-junit-reporter --reporter-options mochaFile=./TEST-RESULTS.xml"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apickli": "latest",
+        "sinon": "^9.0.2",
+        "apigeelint": "^0.4.3"
+    },
+    "devDependencies": {
+        "argv": "^0",
+        "cucumber": "^5.1.0",
+        "cucumber-html-reporter": "^5",
+        "eslint": "^6",
+        "eslint-config-google": "^0",
+        "fs-extra": "^8",
+        "gulp": "^4",
+        "gulp-cucumber": "^0",
+        "gulp-eslint": "^6",
+        "gulp4-run-sequence": "^0",
+        "mocha": "^8.0.1",
+        "nyc": "^15.1.0",
+        "mocha-junit-reporter": "^1.12.0"
+    }
 }
-
-
-
